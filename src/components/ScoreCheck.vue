@@ -2,9 +2,9 @@
   <div>
     <ion-item>
       <ion-label position="floating">ウォレットアドレス</ion-label>
-      <ion-input></ion-input>
+      <ion-input v-model="address"></ion-input>
     </ion-item>
-    <ion-button>作成</ion-button>
+    <ion-button @click="addressInfo">作成</ion-button>
   </div>
 </template>
 
@@ -15,24 +15,18 @@
     IonButton,
     IonInput,
   } from "@ionic/vue";
-  import { defineComponent } from "vue";
-  import { Calendar } from "@ionic-native/calendar";
+  import { defineComponent, ref } from "vue";
 
   export default defineComponent({
     components: { IonItem, IonLabel, IonButton, IonInput },
     setup() {
-      const create = () => {
-        Calendar.createCalender("MyCalender").then(
-          (msg) => {
-            console.log(msg);
-          },
-          (err) => {
-            console.log(err);
-          }
-        );
-      };
+      const address = ref();
+      function addressInfo() {
+        console.log(address.value, "address");
+      }
       return {
-        create
+        address,
+        addressInfo,
       }
     },
   });

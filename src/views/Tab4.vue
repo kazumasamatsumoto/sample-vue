@@ -12,17 +12,17 @@
         </ion-toolbar>
       </ion-header>
     
-      <EventList />
+      <Event />
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import EventList from '@/components/EventList/index.vue';
+import Event from '@/components/EventPage/index.vue';
 
 export default  {
-  name: 'Tab1',
-  components: { EventList, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  name: 'Tab4',
+  components: { Event, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 }
 </script>

@@ -8,7 +8,7 @@
     <div class="center">
       <div class="card2">
         <div class="center">
-          <form v-on:submit="$router.push('/eventpage')">
+          <form v-on:submit="$router.push('/tabs/tab4')">
             <button>ブロックチェーンプロジェクト</button>
           </form>
           <form v-on:submit="$router.push('/eventpage')">
@@ -32,6 +32,12 @@ export default {
 </script>
 
 <style>
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .card2 {
   width: 400px;

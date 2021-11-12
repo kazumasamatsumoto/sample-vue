@@ -28,7 +28,7 @@
     IonContent,
     IonItem,
   } from "@ionic/vue";
-  import Event from "@/components/EventPage/index.vue";
+  import Event from "@/components/EventPage.vue";
 
   export default {
     name: "Tab4",

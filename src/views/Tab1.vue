@@ -27,7 +27,7 @@
     IonContent,
     IonItem,
   } from "@ionic/vue";
-  import EventList from "@/components/EventList/index.vue";
+  import EventList from "@/components/EventList.vue";
 
   export default {
     name: "Tab1",

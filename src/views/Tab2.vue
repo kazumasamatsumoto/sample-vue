@@ -11,18 +11,30 @@
           <ion-title size="large">スコア確認</ion-title>
         </ion-toolbar>
       </ion-header>
-      
-      <ExploreContainer name="スコア確認" />
+      <ScoreCheck />
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+  import {
+    IonPage,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
+  } from "@ionic/vue";
+  import ScoreCheck from "@/components/ScoreCheck.vue"
 
-export default  {
-  name: 'Tab2',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
-}
+  export default {
+    name: "Tab2",
+    components: {
+      ScoreCheck,
+      IonHeader,
+      IonToolbar,
+      IonTitle,
+      IonContent,
+      IonPage,
+    },
+  };
 </script>

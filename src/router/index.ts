@@ -12,6 +12,10 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/Tab4.vue"),
   },
   {
+    path: "/Event/:id/Assessment",
+    component: () => import("@/views/Tab4.vue"),
+  },
+  {
     path: "/tabs/",
     component: Tabs,
     children: [

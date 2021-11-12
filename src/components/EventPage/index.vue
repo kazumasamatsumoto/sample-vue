@@ -16,6 +16,7 @@
       <form>
         <IonButton @click="onClick">参加する</IonButton>
       </form>
+      <IonButton @click="goAssessment">テスト</IonButton>
     </div>
   </div>
 </template>
@@ -41,6 +42,9 @@
       function onClick() {
         console.log("clicked!");
       }
+      function goAssessment() {
+        window.location.href = `Event/${route.params.id}/Assessment`
+      }
       const eventList = ref([
         { id: "1", title: "test" },
         { id: "2", title: "test2" },
@@ -49,6 +53,7 @@
         eventList,
         eventTitle,
         onClick,
+        goAssessment
       };
     },
   });
